@@ -1,0 +1,241 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About BGMChanger"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "PBBGMChanger, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright abujafar © 2013",IDC_STATIC,42,26,114,8,0,WS_EX_TRANSPARENT
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_BGMCHANGER_DIALOG DIALOGEX 0, 0, 213, 186
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "PBBGMChanger"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Browse [Sound_Background.i3Pack] file",IDC_STATIC,3,2,207,80
+    PUSHBUTTON      "...",IDC_BTNBROWSE,9,15,22,12
+    EDITTEXT        IDC_EDTPATH,37,15,167,12,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "Audio Information:",IDC_STC_GROUP01,9,31,196,47
+    LTEXT           "Filename",IDC_STC_INFOFILE,16,44,41,10,0,WS_EX_TRANSPARENT
+    LTEXT           ":",IDC_STC_FILE,59,44,140,8,0,WS_EX_TRANSPARENT
+    LTEXT           "Sample Rate",IDC_STC_INFOSR,15,54,41,10,0,WS_EX_TRANSPARENT
+    LTEXT           ":",IDC_STC_SAMPLE,59,54,52,8,0,WS_EX_TRANSPARENT
+    LTEXT           "Channels",IDC_STC_INFOCHAN,116,54,30,10,0,WS_EX_TRANSPARENT
+    LTEXT           ":",IDC_STC_CHANNELS,149,54,48,8,0,WS_EX_TRANSPARENT
+    LTEXT           "Bitrate",IDC_STC_INFOBR,15,64,22,8,0,WS_EX_TRANSPARENT
+    LTEXT           ":",IDC_STC_BITRATE,59,64,52,8,0,WS_EX_TRANSPARENT
+    LTEXT           "Codec",IDC_STC_INFOCODEC,116,64,30,10,0,WS_EX_TRANSPARENT
+    LTEXT           ":",IDC_STC_CODEC,149,64,48,8,0,WS_EX_TRANSPARENT
+    GROUPBOX        "Change current audio with my OGG file",IDC_STATIC,3,84,207,80
+    PUSHBUTTON      "...",IDC_BTNBROWSE2,9,97,22,12
+    EDITTEXT        IDC_EDTPATH2,37,97,167,12,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "Audio Information:",IDC_STC_GROUP02,9,113,196,47
+    LTEXT           "Filename",IDC_STC_INFOFILE2,16,126,41,10,0,WS_EX_TRANSPARENT
+    LTEXT           ":",IDC_STC_FILE2,59,126,140,8,0,WS_EX_TRANSPARENT
+    LTEXT           "Sample Rate",IDC_STC_INFOSR2,15,136,41,10,0,WS_EX_TRANSPARENT
+    LTEXT           ":",IDC_STC_SAMPLE2,59,136,52,8,0,WS_EX_TRANSPARENT
+    LTEXT           "Channels",IDC_STC_INFOCHAN2,116,136,30,10,0,WS_EX_TRANSPARENT
+    LTEXT           ":",IDC_STC_CHANNELS2,149,136,48,8,0,WS_EX_TRANSPARENT
+    LTEXT           "Bitrate",IDC_STC_INFOBR2,15,146,22,8,0,WS_EX_TRANSPARENT
+    LTEXT           ":",IDC_STC_BITRATE2,59,146,52,8,0,WS_EX_TRANSPARENT
+    LTEXT           "Codec",IDC_STC_INFOCODEC2,116,146,30,10,0,WS_EX_TRANSPARENT
+    LTEXT           ":",IDC_STC_CODEC2,149,146,48,8,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "&Save As...",IDC_BTN_CHANGE,130,168,80,14
+    LTEXT           "",IDC_STC_AUTHOR,3,171,64,8,0,WS_EX_TRANSPARENT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "0xDEADBEEF"
+            VALUE "FileDescription", "Point Blank BGM Changer"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "BGMChanger.exe"
+            VALUE "LegalCopyright", "abujafar © 2013"
+            VALUE "OriginalFilename", "BGMChanger.exe"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_BGMCHANGER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 210
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 183
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About BGMChanger..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Indonesian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_IND)
+#ifdef _WIN32
+LANGUAGE LANG_INDONESIAN, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\BGMChanger.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\BGMChanger.ico"
+#endif    // Indonesian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\BGMChanger.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
